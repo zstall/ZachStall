@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+ <!-- ----- INDEX NAV ----- -->
+{% block nav %}
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'about_me' %}">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">zBlog</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'pc_builds' %}">PC Builds</a>
+</li>
+{% endblock %}
+ <!-- ----- END INDEX NAV ----- -->
+
+{% block content %}
+  <!-- ----- HEADER IMAGE ----- -->
+  <div class="index_image container-fluid bg-1 text-center" id="home">
+    <h1>Zachary Stall</h1>
+    <h4>Developer in Denver Colorado</h4>
+    <!-- Attention Grabber Image -->
+    <img  class="img-responsive rounded-circle margin"
+          src="{% static "ZachStallPortfolio/index_media/ZachStall_main_index.jpg" %}"
+          alt="Picture not loading"
+          width="350"
+          height="auto">
+  </div>
+  <!-- ----- END HEADER ----- -->
+
+  <!-- ----- CODING LANGUAGES/FRAMEWORKS ----- -->
+  <div class="container" id="languages">
+    <div class="row">
+      <div class="col-md-4">
+        <br>
+        <img  class="code_image"
+              src="{% static "ZachStallPortfolio/index_media/code.png" %}"
+              alt="Coding logo: </> nothing too exciting ;)"
+              width="250"
+              height="auto">
+      </div>
+      <!-- Coding language grid -->
+      <div class="col-md-8">
+        <div class="container" id="language_grid">
+          <h2>Coding</h2>
+          <p>Through work experience, coursework, and self teaching,
+              these are the languages and frameworks I am familiar with.</p>
+          <div class="container">
+            <div class="row">
+              <div class="lan col-md-5">HTML</div>
+              <div class="lan col-md-5">CSS</div>
+              <div class="w-100"></div>
+              <div class="lan col-md-5">Bootstrap</div>
+              <div class="lan col-md-5">JavaScript</div>
+              <div class="w-100"></div>
+              <div class="lan col-md-5">Python</div>
+              <div class="lan col-md-5">Java</div>
+              <div class="w-100"></div>
+              <div class="lan col-md-5">php</div>
+              <div class="lan col-md-5">Django</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----- END CODING LANGUAGES/FRAMEWORKS ----- -->
+
+  <!-- ----- ABOUT ME ----- -->
+  <div class="container-fluid bg-grey">
+    <div class="container" id="languages">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="container" id="language_grid">
+            <h2>Who I am:</h2>
+            <p>I am a Colorado native who grew up in Lyons CO and now lives in Denver.
+            I have a degree in mathematics from CSU, and have taken computer science courses
+            at Metropolitan State University in Denver. Most recently I've been working as
+            a online education specialist, developing online courses and maintaining content
+            on my company LMS and website. I have a passion for learning and technology. I'm
+            highly motivated to make an impact and learn new technology. If you'd like to learn
+            more about me, click <a href="{% url 'about_me' %}">here</a>.</p>
+          </div>
+        </div>
+        <!-- Image of me, Caitlin, and Sam. -->
+        <div class="col-md-3">
+          <br>
+          <img  class="img-responsive rounded-circle margin code_image slideanim"
+                src="{% static "ZachStallPortfolio/index_media/ZachStall_about_index.jpeg" %}"
+                alt="Img not loading"
+                width="300"
+                height="auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----- END ABOUT ME ----- -->
+
+  <!-- ----- PROJECTS ----- -->
+  <div id="projects" class="container text-center">
+    <h2>Portfolio</h2><br>
+    <h4>Here are the projects I am working on. Click on the images to view the pages.</h4>
+    <!-- Row 1 -->
+    <div class="row text-center slideanim">
+      <!-- Better Beer Blog -->
+      <div class="col-12 col-md-6 ">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="">
+            <img  class="img-fluid"
+                  src="{% static "ZachStallPortfolio/index_media/zBlog_index_image.jpg" %}"
+                  alt="zBlog landing page image">
+          </a>
+          <p><strong>zBlog a Better Beer Blog</strong></p>
+          <p>There's a lot of beer (and coding) in Colorado...</p><br>
+        </div>
+      </div>
+      <!-- End Better Beer Blog -->
+
+      <!-- PC Builds -->
+      <div class="col-12 col-md-6">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="{% url 'pc_builds' %}">
+            <img  class="img-fluid"
+                  src="{% static "ZachStallPortfolio/index_media/projects_pc.png" %}"
+                  alt="pc builds">
+          </a>
+          <p><strong>PC Builds</strong></p>
+          <p>Here are a handful of PC's I've built.<br></p><br>
+        </div>
+      </div>
+      <!-- End PC Builds -->
+    </div>
+    <!-- End Row 1 -->
+
+    <!-- Row 2 -->
+    <div class="row text-center slideanim">
+      <!-- Better Beer Blog -->
+      <div class="col-12 col-md-6 ">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="">
+            <img  class="img-fluid"
+                  src="{% static "ZachStallPortfolio/index_media/projects_pc.jpg" %}"
+                  alt="zBlog landing page image">
+          </a>
+          <p><strong>PLACE HOLDER</strong></p>
+          <p>REPLACE ME WITH COOL CONTENT</p><br>
+        </div>
+      </div>
+      <!-- End Better Beer Blog -->
+
+      <!-- PC Builds -->
+      <div class="col-12 col-md-6">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="{% url 'pc_builds' %}">
+            <img  class="img-fluid"
+                  src="{% static "ZachStallPortfolio/index_media/projects_pc.jpg" %}"
+                  alt="pc builds">
+          </a>
+          <p><strong>GitHub</strong></p>
+          <p>See other projects that I'm working on.<br></p><br>
+        </div>
+      </div>
+      <!-- End PC Builds -->
+    </div>
+    <!-- End Row 2 -->
+  </div>
+  <!-- ----- END PROJECTS -----  -->
+
+{% endblock %}

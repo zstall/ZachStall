@@ -1,0 +1,419 @@
+
+/* ----- Imports ----- */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/* ----- End Imports ----- */
+
+
+
+/* home:Global */
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.latofont {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+}
+
+.foot {
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+/* NAV-BAR */
+.navi {
+  background-color: #2f2f2f;
+}
+
+.pc-img {
+  display: block;
+  max-width: 100%;
+  width: 275px;
+  height: auto;
+  padding: 5px;
+}
+
+.pc-main-img {
+  display: block;
+  max-width: 100%;
+  width: 1015px;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+}
+
+/* ----- Index CSS ----- */
+.bg-1 {
+  background-color: #0084ff;  /* Blue */
+  color: #ffffff;
+}
+
+.bg-dgrey {
+  background-color: #a6a6a6;
+}
+
+.index_image {
+  padding-bottom: 50px;
+}
+
+.index_image img {
+  display:inline
+}
+ /* ----- End Index CSS -----  */
+
+
+ /* ----- About Me -----  */
+
+.bg-2 {
+  background-color: #0F9D58; /*green*/
+  color: #ffffff;
+}
+
+.margin {
+  margin-bottom: 45px;
+}
+
+.container-fluid-about {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+ /* ----- End About Me ----- */
+
+
+
+/* ----- Languages ----- */
+#languages, #projects, #contact, #thanks {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#language_grid {
+  margin-left: 15px;
+}
+
+.lan:hover {
+  opacity: 0.8;
+}
+
+.lan {
+  align: center;
+  background-color: #0084ff;
+  opacity: 1.0;
+  margin: 4px;
+  padding: 5px;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.code_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  padding-top: ;
+}
+
+/* ----- End Languages -----  */
+
+
+ /* ----- Projects/Portfolio Section ----- */
+
+.thumbnail {
+      padding: 0 0 0 0;
+      border: none;
+      border-radius: 0;
+      background-color: #d2d2d2;
+  }
+
+.thumbnail img {
+    margin-bottom: 10px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+}
+
+#projectsImage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#projects {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topThumbnail {
+  margin-bottom: 25px;
+}
+
+ /* ----- End Projects/Portfolio Section -----  */
+
+
+/* ----- Carousel -----  */
+
+#carouselProject {
+ padding-bottom: 100px;
+ padding-top: 100px;
+}
+
+.carousel {
+ height: 150px;
+ width: auto;
+}
+
+.pcbuilds-container ul {
+ list-style: none;
+}
+
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:1000px;
+  height:auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: #000;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #0084ff;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #0084ff;
+}
+
+#carouselProject img {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+@media screen and (max-width: 480px) {
+  #carouselProject img {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#projects h4 {
+  padding-bottom: 25px;
+}
+
+/* ----- End Carousel ----- */
+
+
+/* ----- sliding animation ------ */
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+/* ----- End Sliding Animation -----  */
+
+/* ----- Footer ----- */
+
+.footer-social-icons {
+	background-color: #2f2f2f;
+	width: 100%;
+}
+
+
+.social-icon {
+	color: #2d2d2d;
+}
+
+.social-icons {
+  margin: 0;
+  margin-left: -30px;
+}
+
+.footer-social-icons h3, .footer-social-icons p {
+	color: #fff;
+	text-align: center;
+}
+
+#email {
+  color: #0084ff;
+  text-decoration: none;
+}
+
+.social-icons li {
+
+	display: inline;
+	margin: 5px;
+}
+
+
+.fa-facebook {
+
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-git {
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-git:hover {
+    background-color: #eb8231;
+}
+
+.fa-instagram {
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-instagram:hover {
+    background-color: #fb3958;
+}
+
+.fa-linkedin {
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.fa-google {
+    padding: 10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-google:hover {
+    background-color: #e25714;
+}
+
+
+/* Thank You Page */
+#thanks {
+  padding-top: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.thanksBody {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanksContainer {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin-top: 50px;
+  background: rgba(0,0,0,0);
+  transform: rotate(-30deg) skew(25deg) scale(.75);
+  transition: 0.5s;
+}
+
+.thanksContainer img {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.thanksContainer:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.thanksContainer:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: .7;
+}
+
+.thanksContainer:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: .4;
+}
+
+.thanksContainer:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: .1;
+}
+/* End Thank You Page */
