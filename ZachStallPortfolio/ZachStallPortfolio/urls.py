@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from ZachStallPortfolio import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,5 +25,6 @@ urlpatterns = [
     url(r'^about_me/$', views.AboutMePage.as_view(), name='about_me'),
     url(r'^pc_builds/$', views.PcBuildsPage.as_view(), name='pc_builds'),
     url(r'^leela/$', views.LeelaPage.as_view(), name='leela'),
+    url(r'', include('zBLOG.urls')),
 
 ]

@@ -127,4 +127,4 @@ STATICFILES_DIRS = [
     MEDIA_DIR
     ]
 
-LOGIN_REDIRECT_URL = 'zBLOG:post_list'
+LOGIN_REDIRECT_URL = 'zblog:post_list'
