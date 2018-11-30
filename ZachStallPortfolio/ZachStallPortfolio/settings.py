@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'embed_video',
     'bootstrap3',
     'zBLOG',
 ]
@@ -108,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Aerica/Denver'
 
 USE_I18N = True
 
@@ -125,8 +126,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     MEDIA_DIR
     ]
-#
-# MEDIA_URL = '/media/'
-# MEDIA_DIRS = [os.path.join(BASE_DIR, 'media')]
 
 LOGIN_REDIRECT_URL = 'zBLOG:post_list'
