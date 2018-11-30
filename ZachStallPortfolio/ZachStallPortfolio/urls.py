@@ -22,6 +22,6 @@ urlpatterns = [
     url(r'^$', views.HomePage.as_view(), name='home'),
     url(r'^about_me/$', views.AboutMePage.as_view(), name='about_me'),
     url(r'^pc_builds/$', views.PcBuildsPage.as_view(), name='pc_builds'),
-
+    url(r'^leela/$', views.LeelaPage.as_view(), name='leela'),
 
 ]

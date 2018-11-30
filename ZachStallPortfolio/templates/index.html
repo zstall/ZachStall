@@ -15,6 +15,9 @@
 <li class="nav-item">
   <a class="nav-link" href="{% url 'pc_builds' %}">PC Builds</a>
 </li>
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'leela' %}">Leela</a>
+</li>
 {% endblock %}
  <!-- ----- END INDEX NAV ----- -->
 
@@ -74,7 +77,7 @@
   <div class="container-fluid bg-grey">
     <div class="container" id="languages">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8">
           <div class="container" id="language_grid">
             <h2>Who I am:</h2>
             <p>I am a Colorado native who grew up in Lyons CO and now lives in Denver.
@@ -87,7 +90,7 @@
           </div>
         </div>
         <!-- Image of me, Caitlin, and Sam. -->
-        <div class="col-md-3">
+        <div class="col-md-3 zachstall_about_index_image">
           <br>
           <img  class="img-responsive rounded-circle margin code_image slideanim"
                 src="{% static "ZachStallPortfolio/index_media/ZachStall_about_index.jpeg" %}"
@@ -109,13 +112,13 @@
       <!-- Better Beer Blog -->
       <div class="col-12 col-md-6 ">
         <div id="projectsImage" class="thumbnail topThumbnail">
-          <a href="">
+          <a href="#">
             <img  class="img-fluid"
                   src="{% static "ZachStallPortfolio/index_media/zBlog_index_image.jpg" %}"
                   alt="zBlog landing page image">
           </a>
           <p><strong>zBlog a Better Beer Blog</strong></p>
-          <p>There's a lot of beer (and coding) in Colorado...</p><br>
+          <p>Good beer (and coding) in Colorado...</p><br>
         </div>
       </div>
       <!-- End Better Beer Blog -->
@@ -138,26 +141,26 @@
 
     <!-- Row 2 -->
     <div class="row text-center slideanim">
-      <!-- Better Beer Blog -->
+      <!-- Leela HTML - I LOVE MY DOG! -->
       <div class="col-12 col-md-6 ">
         <div id="projectsImage" class="thumbnail topThumbnail">
-          <a href="">
+          <a href="{% url 'leela' %}">
             <img  class="img-fluid"
-                  src="{% static "ZachStallPortfolio/index_media/projects_pc.jpg" %}"
+                  src="{% static "ZachStallPortfolio/index_media/leela_index.jpg" %}"
                   alt="zBlog landing page image">
           </a>
-          <p><strong>PLACE HOLDER</strong></p>
-          <p>REPLACE ME WITH COOL CONTENT</p><br>
+          <p><strong>Derp Street</strong></p>
+          <p>Meet my derpy dog Leela!</p><br>
         </div>
       </div>
       <!-- End Better Beer Blog -->
 
-      <!-- PC Builds -->
+      <!-- Check out my GitHub, it's always growing -->
       <div class="col-12 col-md-6">
         <div id="projectsImage" class="thumbnail topThumbnail">
-          <a href="{% url 'pc_builds' %}">
+          <a href="https://github.com/zstall" target="_blank">
             <img  class="img-fluid"
-                  src="{% static "ZachStallPortfolio/index_media/projects_pc.jpg" %}"
+                  src="{% static "ZachStallPortfolio/index_media/github_index.jpg" %}"
                   alt="pc builds">
           </a>
           <p><strong>GitHub</strong></p>

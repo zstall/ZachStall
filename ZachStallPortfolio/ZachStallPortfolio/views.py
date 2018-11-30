@@ -8,3 +8,6 @@ class AboutMePage(TemplateView):
 
 class PcBuildsPage(TemplateView):
     template_name = 'pc_builds.html'
+
+class LeelaPage(TemplateView):
+    template_name = 'leela.html'
