@@ -1,0 +1,439 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+ <!-- ----- INDEX NAV ----- -->
+{% block nav %}
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'about_me' %}">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">zBlog</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'pc_builds' %}">PC Builds</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'leela' %}">Leela</a>
+</li>
+{% endblock %}
+ <!-- ----- END INDEX NAV ----- -->
+
+{% block content %}
+  <table 	border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="background-color: #d2d2d2;"
+      width="100%">
+    <tr>
+      <td style="padding: 0 10px;">
+        <!--[if (IE)|mso]>
+                <table 	align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="600">
+                    <tr>
+                      <td>
+              <![endif]-->
+        <table 	align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            class="width-full"
+            style="	max-width: 600px;
+                text-align: center;"
+            width="100%">
+          <tr>
+            <td style="	background-color: #5b3885;
+                  padding: 12px 0;" >
+              <img 	src="{% static "ZachStallPortfolio/leela_media/star_border.png" %}"
+                  style="display: block; max-width: 100%;"
+                  width="600" />
+            </td>
+          </tr>
+          <tr>
+            <td class="	email-title"
+              style="	color: #2d2d2d;
+                  font-family: 'Arial Black', 'GillSans-Bold', 'Arial Bold', Arial, sans-serif;
+                  font-size: 74px;
+                  line-height: 74px;
+                  margin: 0;
+                  padding: 5px 0 10px 0;
+                  text-transform: uppercase;">
+                  ZachStall.co</td>
+          </tr>
+          <tr>
+            <td class="	email-slogan"
+              style="	background: #5b3885;
+                  color: #fcfbfd;
+                  font-family: 'Arial Black', 'GillSans-Bold', 'Arial Bold', Arial, sans-serif;
+                  font-size: 26px;
+                  line-height: 26px;
+                  margin: 0;
+                  padding: 10px 0;
+                  text-transform: uppercase;">
+                  Zachary Stall News and Updates</td>
+          </tr>
+        </table>
+        <!--[if (IE)|mso]>
+                      </td>
+                    </tr>
+                </table>
+              <![endif]-->
+              <!--[if (IE)|mso]>
+                <table 	align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="600">
+                    <tr>
+                      <td>
+              <![endif]-->
+        <table 	class="width-full"
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            style="	color: #fcfbfd;
+                max-width: 600px;"
+            width="100%">
+          <tr>
+            <td style="padding-top: 20px;">
+              <img src="{% static "ZachStallPortfolio/leela_media/leela_main_image.png" %}"
+                 style="display: block;
+                    max-width: 100%;"
+                 width="600" /></td>
+          </tr>
+        </table>
+        <!--[if (IE)|mso]>
+                    </td>
+                  </tr>
+                </table>
+              <![endif]-->
+              <!--[if (IE)|mso]>
+                <table align="center"
+                       border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       width="600">
+                  <tr>
+                    <td>
+             <![endif]-->
+        <table 	class="width-full"
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            style="max-width: 600px;"
+            width="100%">
+          <tr>
+            <td style="font-size: 0;">
+              <div style="display: inline-block;">
+                <table 	class="width-full"
+                    align="left"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="300">
+                  <tr>
+                    <td>
+                      <table  class="width-full"
+                          bgcolor="#5b3885"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          style="	text-align: center;
+                              text-transform: uppercase;
+                              margin-top: 5px;
+                              "
+                          width="295px">
+                        <tr>
+                          <td style="	font-size: 18px;
+                                line-height: 18px;">
+                            <img 	class="email-ornamentation"
+                                alt="ornamentation"
+                                height="15"
+                                src="{% static "ZachStallPortfolio/leela_media/diamond_border.png" %}"
+                                style="display: block;"
+                                width="295"></td>
+                        </tr>
+                        <tr>
+                          <td class="	email-date-day"
+                            style="	color: #fcfbfd;
+                                font-family: 'Arial Black', 'GillSans-Bold', 'Arial Bold', Arial, sans-serif;
+                                font-size: 48px;
+                                font-weight: bold;
+                                line-height: 58px;
+                                padding-top: 25px;">
+                                &bull; SAT &bull;</td>
+                        </tr>
+                        <tr>
+                          <td class="	email-date-month"
+                            style="	color: #fcfbfd;
+                                font-family: 'Arial Black', 'GillSans-Bold', 'Arial Bold', Arial, sans-serif;
+                                font-size: 30px;
+                                font-weight: bold;
+                                line-height: 100%;
+                                padding-bottom: 25px;
+                                padding-top: 5px;">
+                                New Pics</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img 	class="email-ornamentation"
+                                alt="ornamentation"
+                                height="16"
+                                src="{% static "ZachStallPortfolio/leela_media/diamond_border.png" %}"
+                                style="display: block;"
+                                width="295" /></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+
+                          </td>
+                          <td>
+
+                      <![endif]-->
+              <div style="display: inline-block;">
+                <table 	class="width-full"
+                    align="left"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="300">
+                  <tr>
+                    <td>
+                      <table  class="width-full margin-left-clr"
+                          bgcolor="#0089b4"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          style=" color: #fcfbfd;
+                              text-align: center;
+                              text-transform: uppercase;
+                              margin-left: 4px;"
+
+                          width="295px">
+                        <tr>
+                          <td style="	font-size: 18px;
+                                line-height: 18px;">
+                            <img 	class="email-ornamentation"
+                                alt="ornamentation"
+                                height="15"
+                                src="{% static "ZachStallPortfolio/leela_media/diamond_border.png" %}"
+                                style="display: block;"
+                                width="295" /></td>
+                        </tr>
+                        <tr>
+                          <td class="	email-tickets-title"
+                            style="	color: #fcfbfd;
+                                font-family: Arial, 'Arial Black', 'GillSans-Bold', 'Arial Bold', Arial, sans-serif;
+                                font-size: 30px;
+                                font-weight: bold;
+                                line-height: 100%;
+                                padding-top: 10px;">
+                                Much Derp</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table 	class="email-tickets-border"
+                                align="center"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="margin: 0 auto;"
+                                width="236">
+                              <tr>
+                                <td height = "4"
+                                  style="	font-size: 4px;
+                                      line-height: 4px;">
+                                  &nbsp;
+                                </td>
+                              </tr>
+                              <tr>
+                                <td bgcolor="#fcfbfd"
+                                  height="3"
+                                  style="	font-size: 3px;
+                                      line-height: 3px;">
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class=" emai-tickets"
+                            style="	color: #fcfbfd;
+                                font-family: Arial;
+                                font-size: 14px;
+                                font-weight: bold;
+                                line-height: 14px;
+                                padding-top: 5px;">
+                            <span 	class=" email-tickets-category"
+                                style="	font-family: 'Arial Black', 'GillSans-Bold','Arial Bold', Arial, sans-serif;
+                                font-size: 26px;
+                                line-height: 26px;">
+                                insta</span>
+                            <span 	class="email-tickets-price"
+                                style="	font-family: 'Arial Black';
+                                font-size: 28px;
+                                line-height: 28px;">
+                                <a href="https://www.instagram.com/leela_ig/" target="_blank" sytle="color: #5b3885;">Link</a></span>
+                                fun</td>
+                        </tr>
+                        <tr>
+                          <td class= "email-tickets"
+                            style="	color: #fcfbfd;
+                                font-family: Arial;
+                                font-size: 14px;
+                                font-weight: bold;
+                                line-height: 14px;
+                                padding-top: 5px;">
+                            <span 	class="email-tickets-category"
+                                style="	font-family: 'Arial Black', 'GillSans-Bold','Arial Bold', Arial, sans-serif;
+                                font-size: 26px;
+                                line-height: 26px;">
+                                insta</span>
+                            <span 	class="email-tickets-price"
+                                style="	font-family: 'Arial Black';
+                                font-size: 28px;
+                                line-height: 28px;">
+                                <a href="https://www.instagram.com/leela_ig/" target="_blank" sytle="color: #5b3885;">Link</a></span>
+                                fun</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img 	class="email-ornamentation"
+                                alt="ornamentation"
+                                height="16"
+                                src="{% static "ZachStallPortfolio/leela_media/diamond_border.png" %}"
+                                style="	display: block;"
+                                width="295" /></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <!--[if (IE)|mso]>
+                    </td>
+                  </tr>
+                </table>
+            <![endif]-->
+
+            <!--[if (IE) | mso]>
+                <table align="center"
+                       border="0"
+                       cellpadding="0"
+                       cellspacing="0"
+                       width="600">
+                    <tr>
+                      <td>
+            <![endif]-->
+        <table 	class="width-full width-fixed-600"
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            style="max-width: 600px;"
+            width="100%">
+          <tr>
+            <td align="center"
+              style="padding: 30px 0;">
+
+              <div>
+                <!--[if mso]>
+                    <v:roundrect 	xmlns:v="urn:schemas-microsoft-com:vml"
+                            xmlns:w="urn:schemas-microsoft-com:office:word"
+                            href="http://zstall.com"
+                            target="_blank"
+                            style=" 	height:50px;
+                                  v-text-anchor:middle;
+                                  width:260px;"
+                            arcsize="12%"
+                            strokecolor="#000000"
+                            fillcolor="#886cac">
+                      <w:anchorlock/>
+                        <center style="	color:#ffffff;
+                            font-family: 'Arial Black', 'GillSans-Bold','Arial Bold', Arial, sans-serif;
+                            font-size:20px;
+                            font-weight:bold;
+                            text-transform: uppercase;">
+                        Buy Derp Merch</center>
+                    </v:roundrect>
+                <![endif]-->
+                <a 	href="{% url 'leela' %}"
+                  style="	background-color:#886cac;
+                      border:1px solid #000000
+                      solid #000000;
+                      border-radius:6px;
+                      color:#ffffff;
+                      display:inline-block;
+                      font-family: 'Arial Black', 'GillSans-Bold','Arial Bold', Arial, sans-serif;
+                      font-size:13px;
+                      font-weight:bold;
+                      line-height:50px;
+                      text-align:center;
+                      text-decoration:none;
+                      text-transform: uppercase;
+                      width:260px;
+                      -webkit-text-size-adjust:none;
+                      mso-hide:all;">
+                        Buy Derp Merch</a></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="	center"
+              class=" email-phone-number"
+              sytle=" color: #ffffff;
+                  font-family: Arial, sans-serif;
+                  font-weight: bold;
+                  padding-bottom: 30px;">
+              Feeling Buggy, Call 123-456-7891
+            </td>
+          </tr>
+        </table>
+        <table  class="width-full"
+            align="center"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            style=" color:  #5b3885;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                max-width: 600px;"
+            width="100%">
+          <tr>
+            <td align="center">
+              Can't hang? <a href="#" sytle="color: ##5b3885;">unsubscribe</a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"
+              style="padding: 15px 0;">
+              Denver CO
+            </td>
+          </tr>
+        </table>
+        <!--[if (IE) | mso]>
+                        </td>
+                    </tr>
+                  </table>
+              <![endif]-->
+      </td>
+    </tr>
+  </table>
+
+
+
+{% endblock %}
