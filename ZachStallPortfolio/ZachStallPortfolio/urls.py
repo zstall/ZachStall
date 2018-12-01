@@ -28,5 +28,5 @@ urlpatterns = [
     url(r'^leela/$', views.LeelaPage.as_view(), name='leela'),
     url(r'', include('zBLOG.urls')),
     url(r'^login/$', auth_views.login, name='login'),
-    url(r'^logout/$', auth_views.logout, name='logout'),
-]
+    url(r'^logout/$', auth_views.logout, name='logout', kwargs = {'next_page':'zBLOG:post_list'}),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

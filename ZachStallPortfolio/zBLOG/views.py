@@ -72,7 +72,7 @@ def add_comment_to_post(request,pk):
 
     else:
         form = CommentForm()
-    return render(request, 'ZBLG/comment_form.html', {'form':form})
+    return render(request, 'zBLOG/comment_form.html', {'form':form})
 
 
 @login_required
