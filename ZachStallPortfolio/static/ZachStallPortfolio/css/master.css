@@ -221,8 +221,10 @@
 /* ----- End Carousel ----- */
 
 /* ----- zBLOG Index ----- */
-.header_image_zblog{
-  background: url("/static/zBLOG/zBlog_index_image.jpg") 50% 0 repeat fixed;
+.header_image_zblog {
+  background: url("/static/zBLOG/zBlog_index_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   height: 350px;
   padding: 100px 0 0 0;
@@ -238,6 +240,20 @@
 
 .header_image_zblog h5 {
   font-size: 2em;
+}
+ /* ----- END zBLOG Index ----- */
+ /* ----- zBLOG Posts ----- */
+.post_header_image_zblog {
+  background: url("/static/zBLOG/sunny_mountain_post.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #2d2d2d;
+  height: 350px;
+  padding: 100px 0 0 0;
+}
+.post_header_image_zblog h1 {
+  text-align: center;
+  font-size: 7em;
 }
 
 

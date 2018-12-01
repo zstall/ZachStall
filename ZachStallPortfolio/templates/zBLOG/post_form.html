@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load embed_video_tags %}
+
+ <!-- ----- INDEX NAV ----- -->
+{% block nav %}
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'home' %}">Zach Stall Portfolio<span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'zBLOG:post_list' %}">zBlog Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'zBLOG:zblog_about' %}">zBlog About</a>
+  </li>
+</ul>
+<ul class="navbar-nav ml-auto">
+{% if user.is_authenticated %}
+  <li class="nav-item ml-auto">
+    <a class="nav-link" href="{% url 'zBLOG:post_new' %}">New Post</a>
+  </li>
+  <li class="nav-item ml-auto">
+    <a class="nav-link navbar-right" href="{% url 'zBLOG:post_draft_list' %}">Drafts</a>
+  </li>
+  <li class="nav-item ml-auto">
+    <a class="nav-link navbar-right" href="{% url 'logout' %}">Log Out</a>
+  </li>
+  <li class="nav-item ml-auto">
+    <a class="nav-link navbar-right">Welcome: {{user.username}}</a>
+  </li>
+{% else %}
+  <li class="nav-item ml-auto">
+    <a class="nav-link ml-auto" href="{% url 'login' %}">Login</a>
+  </li>
+{% endif %}
+</ul>
+{% endblock %}
+ <!-- ----- END INDEX NAV ----- -->
+
+{% block content %}
+  <div class="header_image_zblog">
+    <h1>zBlog</h1>
+    <h5>A Better Beer Blog</h5>
+  </div>
+
+  <div class="container centerstage">
+    <h1>Create/Edit your post here</h1>
+    <form class="post-form" enctype="multipart/form-data" method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button class="save btn btn-default" type="submit">Save</button>
+    </form>
+  </div>
+
+  <script>var editor = new MediumEditor('.editable');</script>
+{% endblock %}

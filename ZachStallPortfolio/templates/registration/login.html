@@ -38,15 +38,23 @@
  <!-- ----- END INDEX NAV ----- -->
 
 {% block content %}
-  <div class="header_image_zblog">
-    <h1>zBlog</h1>
-    <h5>A Better Beer Blog</h5>
+
+<div class="container centerstage">
+  <div class="jumbotron">
+    <h2>Please Login:</h2>
+    <h3>(Must be a SuperUser)</h3>
+
+    {% if form.errors %}
+      <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+    {# may need to add BetterBeerBlog:login below #}
+    <form action="{% url 'login' %}" method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input class="btn btn-primary" type="submit" value="Login">
+      <input type="hidden" name="next" value="{{next}}">
+    </form>
   </div>
-  {% for post in posts %}
-      <div class="post">
-        <p class='date'>created: {{[post.created_date|date:'d-m-Y']}}</p>
-        <h1><a href="{% url 'BetterBeerBlog:post_detail' pk=post.pk %}">{{post.title}}</a></h1>
-        <p>{{post.text|truncatechars:200}}</p>
-      </div>
-    {% endfor %}
+</div>
+
   {% endblock %}
