@@ -18,6 +18,7 @@ from django.contrib import admin
 from ZachStallPortfolio import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,5 +27,6 @@ urlpatterns = [
     url(r'^pc_builds/$', views.PcBuildsPage.as_view(), name='pc_builds'),
     url(r'^leela/$', views.LeelaPage.as_view(), name='leela'),
     url(r'', include('zBLOG.urls')),
-
+    url(r'^login/$', auth_views.login, name='login'),
+    url(r'^logout/$', auth_views.logout, name='logout'),
 ]

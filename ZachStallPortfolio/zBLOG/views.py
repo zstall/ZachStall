@@ -12,7 +12,7 @@ from django.views.generic import (  TemplateView, ListView,
 # Create your views here.
 
 class AboutView(TemplateView):
-    template_name = 'ZBLG/zblog_about.html'
+    template_name = 'ZBLOG/zblog_about.html'
 
 class PostListView(ListView):
     model = Post

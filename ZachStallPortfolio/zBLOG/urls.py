@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
-from . import views
+from zBLOG import views
 
 app_name = 'zBLOG'
 
@@ -16,5 +16,5 @@ urlpatterns = [
     url(r'^comment/(?P<pk>\d+)/approve/$',views.comment_approve,name='comment_approve'),
     url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
     url(r'^post/(?P<pk>\d+)/publish/$', views.post_publish, name='post_publish'),
-
+    
 ]

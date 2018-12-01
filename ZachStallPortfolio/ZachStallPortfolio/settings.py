@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Aerica/Denver'
+TIME_ZONE = 'America/Denver'
 
 USE_I18N = True
 
@@ -127,4 +127,4 @@ STATICFILES_DIRS = [
     MEDIA_DIR
     ]
 
-LOGIN_REDIRECT_URL = 'zblog:post_list'
+LOGIN_REDIRECT_URL = 'zBLOG:post_list'

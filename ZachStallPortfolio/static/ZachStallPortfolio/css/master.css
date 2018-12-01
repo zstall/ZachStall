@@ -220,6 +220,26 @@
 
 /* ----- End Carousel ----- */
 
+/* ----- zBLOG Index ----- */
+.header_image_zblog{
+  background: url("/static/zBLOG/zBlog_index_image.jpg") 50% 0 repeat fixed;
+  color: white;
+  height: 350px;
+  padding: 100px 0 0 0;
+}
+
+.header_image_zblog h1, .header_image_zblog h5 {
+  text-align: center;
+}
+
+.header_image_zblog h1 {
+  font-size: 7em;
+}
+
+.header_image_zblog h5 {
+  font-size: 2em;
+}
+
 
 /* ----- sliding animation ------ */
 
@@ -365,6 +385,12 @@
 .fa-google:hover {
     background-color: #e25714;
 }
+
+/* About Page */
+.about_me_first_container {
+  width: 70%;
+}
+
 
 
 /* Leela Page */
