@@ -51,11 +51,11 @@
   <br>
   {% endif %}
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-lg-4">
       <img class="post-image" src="{{ post.blog_image.url }}" alt="">
     </div>
 
-    <div class="col-8">
+    <div class="col-lg-8">
       <p class="postcontent">{{ post.text|safe|linebreaksbr }}</p>
       {% if user.is_authenticated %}
         <a class="btn btn-primary" href="{% url 'zBLOG:post_edit' pk=post.pk %}">

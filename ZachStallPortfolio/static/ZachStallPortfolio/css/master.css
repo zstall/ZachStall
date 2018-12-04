@@ -61,6 +61,8 @@
 .index_image img {
   display:inline
 }
+
+
  /* ----- End Index CSS -----  */
 
 
@@ -101,11 +103,12 @@
 .lan {
   align: center;
   background-color: #0084ff;
-  opacity: 1.0;
-  margin: 4px;
-  padding: 5px;
-  font-size: 1.5em;
   color: #ffffff;
+  font-size: 1.5em;
+  margin: 4px;
+  opacity: 1.0;
+  padding: 5px;
+  text-align: center;
 }
 
 .code_image {
@@ -241,6 +244,16 @@
 .header_image_zblog h5 {
   font-size: 2em;
 }
+
+.post {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.post a {
+  color: #33006f;
+  font-weight: bold;
+}
  /* ----- END zBLOG Index ----- */
 
  /* ----- zBLOG Posts ----- */
@@ -248,14 +261,15 @@
   background: url("/static/zBLOG/sunny_mountain_post.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #2d2d2d;
   height: 350px;
   padding: 100px 0 0 0;
 }
 .post_header_image_zblog h1 {
+  color: #f4c20d;
   text-align: center;
-  font-size: 7em;
+  font-size: 8vw;
 }
+
 .post-image {
   height: 240px;
   width: auto;
@@ -510,9 +524,6 @@ table {
         padding-top: 10px !important; }
       u + .gmail .stack-column-two {
           padding-top: 20px !important; } }
-
-
-
 /* End Leela Page */
 
 
