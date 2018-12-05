@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'zBLOG',
 ]
 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -132,3 +134,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
 
 LOGIN_REDIRECT_URL = 'zBLOG:post_list'
+
+
+try:
+    from keys import *
+except ImportError:
+    pass
+
+assert len(SECRET_KEY) > 20, 'Please set SECRET_KEY in keys.py'
