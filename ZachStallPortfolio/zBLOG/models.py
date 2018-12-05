@@ -9,7 +9,7 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length = 200)
     text = models.TextField()
-    blog_image = models.ImageField( upload_to="media/zBLOG/upload_images",
+    blog_image = models.ImageField( upload_to="upload_images",
                                     default = "/zBLOG/upload_images/zBlog_index_image.jpg")
     post_video = EmbedVideoField(null=True, blank = True)
     create_date = models.DateTimeField(default = timezone.now)
