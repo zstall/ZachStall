@@ -29,6 +29,158 @@
     building clubs at schools I've worked at, built computers for family and
     friends, and finaly I have built computers for recreation and coding. Here
     are some of my favorite builds and their specs!</p>
+
+
+
+    <div class="pcbuilds-container" id="zero">
+      <div class="pcbuildscard">
+
+        <h3>|Zero|</h3>
+        <h4>My most recent build and daily driver.</h4>
+
+        <div class="">
+          <img class="pc-main-img img-fluid" src="{% static 'ZachStallPortfolio/pc_media/az/az02.jpg' %}" alt="">
+        </div>
+        <p>This is my latest build and my daily driver. I game and work on this PC. I had a hard time deciding cases. Sometimes I wish I would have went with a micro or mini itx build. But the corsair 460x s a beautiful case. I wasn't sold on it until I saw it in person. I tried to get everything I could in black, allowing me to change the color scheme using RGB LED's. In my next build, I have a plan/idea to do a all black, with no lighting (or at least very little). More detailed list, and area to leave comments at <a href="https://pcpartpicker.com" alt="">|Zero|</a><br>Here is the parts list is:</p>
+        <ul class="pcbuildsul">
+          <li>CPU: I7 - 8700K OC to 4.5GHz</li><br>
+          <li>CPU Cooler: NZXT - Kraken X52</li><br>
+          <li>Mobo: MSI - Z370 Gaming PRO Carbon</li><br>
+          <li>Memory: Corsair Vengaeance LPX 16GB</li><br>
+          <li>Storage01: Samsung - 960 Evo 250GB (OS)</li><br>
+          <li>Storage02: Intel - 730 Series 240GB 2.5" solid State Drive</li><br>
+          <li>Storage03: Western Digital - Cavier Blue 1TB</li><br>
+          <li>Storage04: Seagate - Barracuda 3TB</li><br>
+          <li>GPU: EVGA GTX 1070 8GB FTW Gaming ACX 3.0</li><br>
+          <li>Case: Corsair - Crystal 460X RGB</li><br>
+          <li>PSU: Corsair = 760W 80+ Platinum Certified Fully-Modular ATX Power Suply</li><br>
+          <li><a href="{% url 'pc_builds' %}">Back to Top</a></li><br>
+        </ul>
+      </div>
+    </div>
+        <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az01.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-pc">
+      </div>
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az03.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-pc">
+      </div>
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az05.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow cursor img-pc">
+      </div>
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az07.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow cursor img-pc">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az01.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow cursor img-pc">
+      </div>
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az03.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow cursor img-pc">
+      </div>
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az05.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(7)" class="hover-shadow cursor img-pc">
+      </div>
+      <div class="column">
+        <img src="{% static "ZachStallPortfolio/pc_media/az/az07.jpg" %}" style="width: 100%" alt="" onclick="openModal();currentSlide(8)" class="hover-shadow cursor img-pc">
+      </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()" >&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az01.jpg" %}" style="width:75%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az03.jpg" %}" style="width:75%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az05.jpg" %}" style="width:75%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az07.jpg" %}" style="width:75%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az01.jpg" %}" style="width:75%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az03.jpg" %}" style="width:75%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az05.jpg" %}" style="width:75%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8/8</div>
+          <img class="img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az07.jpg" %}" style="width:75%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az01.jpg" %}" onclick="currentSlide(1)" style="width:75%" alt="Absolute Zero IMG 1">
+          </div>
+
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az03.jpg" %}" onclick="currentSlide(2)" style="width:75%" alt="Absolute Zero IMG 2">
+          </div>
+
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az05.jpg" %}" onclick="currentSlide(3)" style="width:75%" alt="Absolute Zero IMG 3">
+          </div>
+
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az07.jpg" %}" onclick="currentSlide(4)" style="width:75%" alt="Absolute Zero IMG 4">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az01.jpg" %}" onclick="currentSlide(5)" style="width:75%" alt="Absolute Zero IMG 5">
+          </div>
+
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az03.jpg" %}" onclick="currentSlide(6)" style="width:75%" alt="Absolute Zero IMG 6">
+          </div>
+
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az05.jpg" %}" onclick="currentSlide(7)" style="width:75%" alt="Absolute Zero IMG 7">
+          </div>
+
+          <div class="column">
+            <img class="demo cursor img-pc" src="{% static "ZachStallPortfolio/pc_media/az/az07.jpg" %}" onclick="currentSlide(8)" style="width:75%" alt="Absolute Zero IMG 8">
+          </div>
+        </div>
+      </div>
+    </div>
+
   <!-- Build 0: Most recent build - Absolute Zero -->
     <div class="pcbuilds-container" id="zero">
       <div class="pcbuildscard">
