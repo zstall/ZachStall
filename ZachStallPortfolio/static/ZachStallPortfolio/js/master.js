@@ -76,12 +76,12 @@ $(window).scroll(function() {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+    if (n > slides.length-24) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length-24}
+    for (i = 0; i < slides.length-24; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
+    for (i = 0; i < dots.length-24; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";

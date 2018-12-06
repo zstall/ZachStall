@@ -160,6 +160,36 @@ h1, h2, h3, h4, p {
 }
 /* ----- End Projects/Portfolio Section -----  */
 
+ /* ----- Pc_Builds CSS ----- */
+
+ .header_image_pcbuilds {
+   background: url("/static/ZachStallPortfolio/pc_media/pc-builds-header.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: white;
+   height: 450px;
+   padding: 100px 0 0 0;
+ }
+
+ .header_image_pcbuilds h1, .header_image_pcbuilds h5 {
+   text-align: center;
+ }
+
+ .header_image_pcbuilds h1 {
+   font-size: 7em;
+ }
+
+ .pc-intro-text {
+   padding: 20px 0;
+ }
+
+ .pcbuildscard h3, .pcbuildscard p {
+   padding-top: 20px;
+ }
+
+
+/* LightBox CSS for PC_Builds */
 .row > .column {
   padding: 0 8px;
 }
@@ -229,7 +259,7 @@ h1, h2, h3, h4, p {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
