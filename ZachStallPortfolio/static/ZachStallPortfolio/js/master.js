@@ -54,6 +54,8 @@ $(window).scroll(function() {
   function closeModal() {
     document.getElementById('myModal').style.display = "none";
     document.getElementById('myModal1').style.display = "none";
+    document.getElementById('myModal2').style.display = "none";
+    document.getElementById('myModal3').style.display = "none";
   }
 
   var slideIndex = 1;
