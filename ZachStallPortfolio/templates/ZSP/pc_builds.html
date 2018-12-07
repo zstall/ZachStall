@@ -3,21 +3,6 @@
 
  <!-- ----- INDEX NAV ----- -->
 {% block nav %}
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'about_me' %}">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'zBLOG:post_list' %}">zBlog</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'pc_builds' %}">PC Builds</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'leela' %}">Leela</a>
-  </li>
 {% endblock %}
  <!-- ----- END INDEX NAV ----- -->
 
@@ -38,9 +23,9 @@
   <div class="pcbuilds-container container" id="zero">
     <div class="pcbuildscard">
       <div class="pc-build-title">
-        <h3>|Zero|</h3>
+        <h3><strong>|Zero|:</strong></h3>
+        <h4>My most recent build and daily driver.</h4>
       </div>
-      <h4>My most recent build and daily driver.</h4>
       <div class="">
         <img class="pc-main-img img-fluid hover-shadow" src="{% static 'ZachStallPortfolio/pc_media/az/az02.jpg' %}" alt="">
       </div>
@@ -250,9 +235,12 @@
   <div class="pcbuilds-container container" id="ember">
     <div class="pcbuildscard">
       <div class="pc-build-title">
-        <h3>Ember</h3>
+        <hr>
+        <h3><strong>Ember:</strong></h3>
+        <h4>This was my second build, and when I truly got the tech bug.</h4>
+        <hr>
       </div>
-      <h4>This was my second build, and when I truly got the tech bug.</h4>
+
       <div class="">
         <img class="pc-main-img img-fluid hover-shadow" src="{% static 'ZachStallPortfolio/pc_media/ember/e-03.jpg' %}" alt="">
       </div>
@@ -459,11 +447,12 @@
   </div>
   <!-- Build 2: Heisenberg open air build. -->
   <div class="pcbuilds-container container" id="ww">
-    <div class='pcbuildscard'>
+    <div class="pcbuildscard">
       <div class="pc-build-title">
-        <h3>Heisenberg</h3>
+        <hr>
+        <h3><strong>Heisenberg</strong></h3>
+        <h4>Open air build.</h4>
       </div>
-      <h4>Open air build.</h4>
       <div class="">
         <img  class="pc-main-img img-fluid hover-shadow"
               src="{% static "ZachStallPortfolio/pc_media/ww/ww-01.jpg" %}"
@@ -675,9 +664,11 @@
   <div class="pcbuilds-container container" id="ww">
     <div class="pcbuildscard">
       <div class="pc-build-title">
-        <h3>Ammo Can</h3>
+        <hr>
+        <h3><strong>Ammo Can</stront></h3>
+        <h4>First build, where it all began!</h4>
       </div>
-      <h4>First build, where it all began!</h4>
+
       <div class="">
         <img  class="pc-main-img img-fluid hover-shadow"
               src="{% static 'ZachStallPortfolio/pc_media/ammo/ac-01.jpg' %}"
