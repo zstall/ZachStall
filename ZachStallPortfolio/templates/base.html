@@ -35,6 +35,21 @@
       <div class="collapse navbar-collapse" id="zNavbar">
         <ul class="navbar-nav mr-auto">
           <!-- CUSTOM NAVIGATION BARS -->
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about_me' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'zBLOG:post_list' %}">zBlog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pc_builds' %}">PC Builds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'leela' %}">Leela</a>
+          </li>
           {% block nav %}
           {% endblock %}
         </ul>

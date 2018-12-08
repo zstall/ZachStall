@@ -181,13 +181,28 @@ h1, h2, h3, h4, p {
  }
 
  .pc-intro-text {
+   font-size: 2em;
    padding: 20px 0;
+   text-align: center;
  }
 
  .pcbuildscard h3, .pcbuildscard p {
    padding-top: 20px;
  }
 
+.pc-build-title h3 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.pc-build-title h4 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.pcbuilds-container p, .pcbuilds-container li {
+  font-size: 1.5em;
+}
 
 /* LightBox CSS for PC_Builds */
 .row > .column {
@@ -328,7 +343,8 @@ img.hover-shadow {
 
 /* ----- zBLOG Index ----- */
 .header_image_zblog {
-  background: url("/static/zBLOG/zBlog_index_image.jpg");
+  background: url("/static/zBLOG/solera-beer-kitchen.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -356,6 +372,12 @@ img.hover-shadow {
 .post a {
   color: #33006f;
   font-weight: bold;
+}
+
+.home-images {
+  height: 240px;
+  width: auto;
+  padding: 10px;
 }
  /* ----- END zBLOG Index ----- */
 
