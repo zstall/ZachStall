@@ -5,12 +5,6 @@
  <!-- ----- INDEX NAV ----- -->
 {% block nav %}
   <li class="nav-item">
-    <a class="nav-link" href="{% url 'home' %}">Zach Stall Portfolio<span class="sr-only">(current)</span></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{% url 'zBLOG:post_list' %}">zBlog Home</a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link" href="{% url 'zBLOG:zblog_about' %}">zBlog About</a>
   </li>
 </ul>
@@ -44,16 +38,40 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="post-container">
-      {% for post in post_list %}
-        <div class="post">
-          <h1><a href="{% url 'zBLOG:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-          <div class="date">
-            <p><strong>Published on:</strong> {{post.published_date}}</p>
-          </div>
-          <a href="{% url 'zBLOG:post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+    <div class="col-7">
+      <div class="row">
+        <div class="post-container">
+          {% for post in post_list %}
+            <div class="post">
+              <h1><a href="{% url 'zBLOG:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+              <div class="date">
+                <p><strong>Published on:</strong> {{post.published_date}}</p>
+              </div>
+              <a href="{% url 'zBLOG:post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+            </div>
+          {% endfor %}
         </div>
-      {% endfor %}
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <img class="home-images" src="{% static 'zBLOG/solera-beer.jpg' %}" alt="">
+      </div>
+      <div class="row">
+        <img class="home-images" src="{% static 'zBLOG/solera-beer.jpg' %}" alt="">
+      </div>
+      <div class="row">
+        <img class="home-images" src="{% static 'zBLOG/solera-beer.jpg' %}" alt="">
+      </div>
+      <div class="row">
+        <img class="home-images" src="{% static 'zBLOG/solera-beer-kitchen.jpg' %}" alt="">
+      </div>
+      <div class="row">
+        <img class="home-images" src="{% static 'zBLOG/solera-beer-kitchen.jpg' %}" alt="">
+      </div>
+      <div class="row">
+        <img class="home-images" src="{% static 'zBLOG/solera-beer-kitchen.jpg' %}" alt="">
+      </div>
     </div>
   </div>
 </div>
