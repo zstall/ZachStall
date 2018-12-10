@@ -25,7 +25,7 @@
     <!-- **** NAVBAR **** -->
     <!-- <nav class="base_navi navbar navbar-expand-lg sticky-top latofont"> -->
     <nav class="navi navbar navbar-expand-lg navbar-dark sticky-top latofont">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static "ZachStallPortfolio/index_media/z_logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#zNavbar">
@@ -35,6 +35,21 @@
       <div class="collapse navbar-collapse" id="zNavbar">
         <ul class="navbar-nav mr-auto">
           <!-- CUSTOM NAVIGATION BARS -->
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about_me' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'zBLOG:post_list' %}">zBlog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pc_builds' %}">PC Builds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'leela' %}">Leela</a>
+          </li>
           {% block nav %}
           {% endblock %}
         </ul>

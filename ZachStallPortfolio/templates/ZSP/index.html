@@ -3,21 +3,6 @@
 
  <!-- ----- INDEX NAV ----- -->
 {% block nav %}
-<li class="nav-item">
-  <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="{% url 'about_me' %}">About</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="{% url 'zBLOG:post_list' %}">zBlog</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="{% url 'pc_builds' %}">PC Builds</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="{% url 'leela' %}">Leela</a>
-</li>
 {% endblock %}
  <!-- ----- END INDEX NAV ----- -->
 
@@ -28,7 +13,7 @@
     <h4>Developer in Denver Colorado</h4>
     <!-- Attention Grabber Image -->
     <img  class="img-responsive rounded-circle margin"
-          src="{% static "ZachStallPortfolio/index_media/ZachStall_main_index.jpg" %}"
+          src="{% static 'ZachStallPortfolio/index_media/ZachStall_main_index.jpg' %}"
           alt="Picture not loading"
           width="350"
           height="auto">
@@ -41,7 +26,7 @@
       <div class="col-md-4">
         <br>
         <img  class="code_image"
-              src="{% static "ZachStallPortfolio/index_media/code.png" %}"
+              src="{% static 'ZachStallPortfolio/index_media/code.png' %}"
               alt="Coding logo: </> nothing too exciting ;)"
               width="250"
               height="auto">
@@ -93,7 +78,7 @@
         <div class="col-md-3 zachstall_about_index_image">
           <br>
           <img  class="img-responsive rounded-circle margin code_image slideanim"
-                src="{% static "ZachStallPortfolio/index_media/ZachStall_about_index.jpeg" %}"
+                src="{% static 'ZachStallPortfolio/index_media/ZachStall_about_index.jpeg' %}"
                 alt="Img not loading"
                 width="300"
                 height="auto">
@@ -113,8 +98,8 @@
       <div class="col-12 col-md-6 ">
         <div id="projectsImage" class="thumbnail topThumbnail">
           <a href="{% url 'zBLOG:post_list' %}">
-            <img  class="img-fluid"
-                  src="{% static "ZachStallPortfolio/index_media/zBlog_index_image.jpg" %}"
+            <img  class="img-fluid hover-shadow"
+                  src="{% static 'ZachStallPortfolio/index_media/zBlog_index_image.jpg' %}"
                   alt="zBlog landing page image">
           </a>
           <p><strong>zBlog a Better Beer Blog</strong></p>
@@ -127,8 +112,8 @@
       <div class="col-12 col-md-6">
         <div id="projectsImage" class="thumbnail topThumbnail">
           <a href="{% url 'pc_builds' %}">
-            <img  class="img-fluid"
-                  src="{% static "ZachStallPortfolio/index_media/projects_pc.png" %}"
+            <img  class="img-fluid hover-shadow"
+                  src="{% static 'ZachStallPortfolio/index_media/projects_pc.png' %}"
                   alt="pc builds">
           </a>
           <p><strong>PC Builds</strong></p>
@@ -145,8 +130,8 @@
       <div class="col-12 col-md-6 ">
         <div id="projectsImage" class="thumbnail topThumbnail">
           <a href="{% url 'leela' %}">
-            <img  class="img-fluid"
-                  src="{% static "ZachStallPortfolio/index_media/leela_index.jpg" %}"
+            <img  class="img-fluid hover-shadow"
+                  src="{% static 'ZachStallPortfolio/index_media/leela_index.jpg' %}"
                   alt="zBlog landing page image">
           </a>
           <p><strong>Derp Street</strong></p>
@@ -159,8 +144,8 @@
       <div class="col-12 col-md-6">
         <div id="projectsImage" class="thumbnail topThumbnail">
           <a href="https://github.com/zstall" target="_blank">
-            <img  class="img-fluid"
-                  src="{% static "ZachStallPortfolio/index_media/github_index.jpg" %}"
+            <img  class="img-fluid hover-shadow"
+                  src="{% static 'ZachStallPortfolio/index_media/github_index.jpg' %}"
                   alt="pc builds">
           </a>
           <p><strong>GitHub</strong></p>
