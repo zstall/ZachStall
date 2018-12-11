@@ -417,9 +417,10 @@ img.hover-shadow {
 }
 
 .post-image {
-  height: 240px;
-  width: auto;
-  padding: 10px;
+
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
 }
  /* ----- END zBLOG Posts ----- */
 
