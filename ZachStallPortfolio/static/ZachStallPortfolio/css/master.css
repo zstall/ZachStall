@@ -17,6 +17,16 @@
   font-size: 1.25em;
 }
 
+.aboutme_font h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+}
+
+.aboutme_font p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+}
+
 h1, h2, h3, h4, p {
   font-family: 'Lato', sans-serif;
 }
@@ -84,7 +94,7 @@ h1, h2, h3, h4, p {
   margin-bottom: 45px;
 }
 
-.container-fluid-about {
+.container-fluid-about, .container-fluid-index, .container-fluid-leela {
   padding-top: 70px;
   padding-bottom: 70px;
 }
