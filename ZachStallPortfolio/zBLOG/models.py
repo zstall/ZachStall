@@ -8,6 +8,7 @@ from embed_video.fields import EmbedVideoField
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length = 200)
+    sub_title = models.CharField(max_length = 200)
     text = models.TextField()
     blog_image = models.ImageField( upload_to="upload_images",
                                     default = "upload_images/zBlog_index_image.jpg")

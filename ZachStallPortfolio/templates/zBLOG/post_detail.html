@@ -32,10 +32,11 @@
  <!-- ----- END INDEX NAV ----- -->
 {% block content %}
 <div class="post_header_image_zblog">
-  <h1 class="post_tittle">{{post.title}}</h1>
+  <h1 class="post_tittle">{{ post.title }}</h1>
+  <h5 class="post_title">{{ post.sub_title }}</h5>
 </div>
 <div class="container centerstage">
-  {% if post.published_date %}
+  <!-- {% if post.published_date %}
     <div class="date postdate">
       {{ post.published_date }}
     </div>
@@ -43,13 +44,21 @@
   <br>
   <a class="btn btn-primary" href="{% url 'zBLOG:post_publish' pk=post.pk %}">Publish</a>
   <br>
-  {% endif %}
+  {% endif %} -->
   <div class="row">
     <div class="col-lg-4">
       <img class="post-image" src="{{ post.blog_image.url }}" alt="">
     </div>
-
     <div class="col-lg-8">
+      {% if post.published_date %}
+        <div class="date postdate">
+          <p>Posted on: {{ post.published_date }}</p>
+        </div>
+      {% else %}
+      <br>
+      <a class="btn btn-primary" href="{% url 'zBLOG:post_publish' pk=post.pk %}">Publish</a>
+      <br>
+      {% endif %}
       <p class="postcontent">{{ post.text|safe|linebreaksbr }}</p>
       {% if user.is_authenticated %}
         <a class="btn btn-primary" href="{% url 'zBLOG:post_edit' pk=post.pk %}">

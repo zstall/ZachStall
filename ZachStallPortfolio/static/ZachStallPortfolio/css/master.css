@@ -391,13 +391,19 @@ img.hover-shadow {
   background: url("/static/zBLOG/sunny_mountain_post.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
+  height: 550px;
   padding: 100px 0 0 0;
 }
 .post_header_image_zblog h1 {
   color: #f4c20d;
   text-align: center;
   font-size: 8vw;
+}
+
+.post_header_image_zblog h5 {
+  color: #f4c20d;
+  text-align: center;
+  font-size: 2vw;
 }
 
 .post-image {

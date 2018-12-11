@@ -44,6 +44,7 @@
           {% for post in post_list %}
             <div class="post">
               <h1><a href="{% url 'zBLOG:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+              <h5><a href="{% url 'zBLOG:post_detail' pk=post.pk %}">{{ post.sub_title }}</a></h5>
               <div class="date">
                 <p><strong>Published on:</strong> {{post.published_date}}</p>
               </div>
