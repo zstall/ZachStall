@@ -84,9 +84,9 @@ h1, h2, h3, h4, p {
   margin-bottom: 45px;
 }
 
-.container-fluid-about {
-  padding-top: 70px;
-  padding-bottom: 70px;
+.container-fluid-about, .index_image {
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
  /* ----- End About Me Index----- */
 
