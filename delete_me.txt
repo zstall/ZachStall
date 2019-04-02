@@ -1,1 +1,0 @@
-This is for testing of git... delete this file later.
