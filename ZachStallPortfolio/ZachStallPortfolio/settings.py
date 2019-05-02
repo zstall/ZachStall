@@ -26,7 +26,11 @@ SECRET_KEY = django_secret_key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.zachstall.co',
+    'zstall.pythonanywhere.com'
+
+    ]
 
 
 # Application definition
@@ -126,6 +130,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     MEDIA_DIR
     ]
+STATIC_ROOT = '/home/zstall/ZachStall/static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
