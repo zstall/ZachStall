@@ -24,11 +24,12 @@ MEDIA_DIR = os.path.join(BASE_DIR,'media')
 SECRET_KEY = django_secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'www.zachstall.co',
-    'zstall.pythonanywhere.com'
+    'zstall.pythonanywhere.com',
+    '127.0.0.1'
 
     ]
 
